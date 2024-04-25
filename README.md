@@ -9,7 +9,7 @@ O site ele existe 3 vaaições, uma sendo a pagina de login principal, onde dela
 
 ## Função
 O site apenas tem a função de fazer uma simulação de uma tela de login, contendo Javascript, html, paginas diversas, e css, e com a função de ser direcionado a outros sites.
-![Login](img/acesso.png)
+![Login](img/vid.gif)
 
 ## Tecnologias utilizadas 
 
