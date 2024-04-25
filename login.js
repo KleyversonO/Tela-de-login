@@ -3,32 +3,22 @@ const emailInput = document.querySelector('.formLogin input[type="email"]');
 const passwordInput = document.querySelector('.formLogin input[type="password"]');
 
 form.addEventListener('submit', (event) => {
-  event.preventDefault(); // Evita o envio padrão do formulário
+  event.preventDefault(); // Prevent default form submission
 
   const email = emailInput.value.trim();
   const password = passwordInput.value.trim();
 
-  let isValid = true;
-  let errorMessage = '';
-
-  // Validação de email (exemplo básico)
-  if (!email || !email.match(/^[\w-\.]+@[\w-\.]+\.[a-zA-Z]{2,}$/)) {
-    isValid = false;
-    errorMessage = 'Por favor, insira um e-mail válido.';
+  if (!email || !password) {
+    alert('Por favor, preencha os campos de e-mail e senha.');
+    // Focus on the first empty field (email by default)
+    if (!email) {
+      emailInput.focus();
+    } else {
+      passwordInput.focus();
+    }
+    return; // Prevent form submission if either field is empty
   }
 
-  // Validação de senha (exemplo básico)
-  if (password.length < 6) {
-    isValid = false;
-    errorMessage = 'A senha deve ter no mínimo 6 caracteres.';
-  }
-
-  if (!isValid) {
-    // Exibe mensagem de erro (exemplo usando alert)
-    alert(errorMessage);
-    return; // Impede o processamento do formulário se inválido
-  }
-
-  // Se a validação for bem-sucedida (substitua pela lógica de envio real do formulário)
+  // If both fields are filled, proceed with form submission or other logic (replace with your actual logic)
   console.log('Formulário enviado com email:', email, 'e senha:', password);
 });
