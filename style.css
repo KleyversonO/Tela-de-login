@@ -104,3 +104,13 @@ body {
     height: 100vh;
     background-image: linear-gradient(to top right, rgb(199, 186, 3), #c25710); 
 }
+.logado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to top right, #f7000c, #a70732); 
+}

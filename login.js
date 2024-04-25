@@ -21,4 +21,6 @@ form.addEventListener('submit', (event) => {
 
   // If both fields are filled, proceed with form submission or other logic (replace with your actual logic)
   console.log('Formulário enviado com email:', email, 'e senha:', password);
+
+  window.location.href = "logado.html";
 });
